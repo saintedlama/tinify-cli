@@ -1,6 +1,6 @@
 {
   "name": "tinify-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tinify images from the command line using the tinify API",
   "bin": {
     "tinify-cli": "./bin/cli.js"
