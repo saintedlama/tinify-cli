@@ -1,0 +1,35 @@
+{
+  "name": "tinify-cli",
+  "version": "1.0.0",
+  "description": "Tinify images from the command line using the tinify API",
+  "bin": {
+    "tinify-cli": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saintedlama/tinify-cli.git"
+  },
+  "keywords": [
+    "tinify",
+    "cli",
+    "compress",
+    "image",
+    "images"
+  ],
+  "author": "Christoph Walcher <christoph.walcher@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saintedlama/tinify-cli/issues"
+  },
+  "homepage": "https://github.com/saintedlama/tinify-cli#readme",
+  "dependencies": {
+    "async": "^2.3.0",
+    "filesize": "^3.5.6",
+    "glob": "^7.1.1",
+    "tinify": "^1.5.0",
+    "yargs": "^7.0.2"
+  }
+}
