@@ -13,8 +13,9 @@ const argv = require('yargs')
   .example('tinify-cli --key secretkey **/*.{png,gif,jpg}', 'tinify all image files')
   .option('k', {
     alias: 'key',
+    default: process.env.TINIFY_API_KEY,
     demandOption: true,
-    describe: 'Your tinify API key. You can get a tinify API key at https://tinypng.com/developers',
+    describe: 'Your tinify API key or set environment variable "TINIFY_API_KEY". You can get a tinify API key at https://tinypng.com/developers',
     type: 'string'
   })
   .help('h')
