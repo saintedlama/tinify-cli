@@ -6,11 +6,11 @@ const { eachLimit } = require('async');
 const fileSize = require('filesize');
 
 const argv = require('yargs')
-  .usage('Usage: $0 [options] <glob-pattern>')
+  .usage('Usage: tinify-cli [options] <glob-pattern>')
   .demandCommand(1, 'Missing required "glob-pattern" argument')
-  .example('$0 --key secretkey **/*.png', 'tinify .png files')
-  .example('$0 --key secretkey **/*.jpg', 'tinify .jpg files')
-  .example('$0 --key secretkey **/*.{png,gif,jpg}', 'tinify all image files')
+  .example('tinify-cli --key secretkey **/*.png', 'tinify .png files')
+  .example('tinify-cli --key secretkey **/*.jpg', 'tinify .jpg files')
+  .example('tinify-cli --key secretkey **/*.{png,gif,jpg}', 'tinify all image files')
   .option('k', {
     alias: 'key',
     demandOption: true,
