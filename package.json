@@ -6,7 +6,9 @@
     "tinify-cli": "./bin/cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,8 @@
     "filesize": "^3.5.6",
     "glob": "^7.1.1",
     "tinify": "^1.5.0",
-    "yargs": "^7.0.2"
-  }
+    "yargs": "^7.0.2",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
